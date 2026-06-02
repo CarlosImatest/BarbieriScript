@@ -1,5 +1,6 @@
 from LoadImage import *
 from barbieri import *
+from parseXML import *
 import json
 import tkinter as tk
 from tkinter import simpledialog, filedialog
@@ -91,9 +92,9 @@ def pick_image_path():
     root = tk.Tk()
     root.withdraw()  # hide the empty window
     path = filedialog.askopenfilename(
-        title="Select Image File",
+        title="Select A File",
         filetypes=[
-            ("Image files", "*.png *.jpg *.jpeg *.tiff *.bmp"),
+            ("Image files", "*.png *.jpg *.jpeg *.tiff *.bmp *.svg"),
             ("All files",   "*.*")
         ]
     )
@@ -103,31 +104,41 @@ def pick_image_path():
 # Main execution
 # Get film size input from the user
 x, y, x_active, y_active, use_xml = film_size_input_window().values()
-print(film_size_input_window().values())
+if not use_xml:
+    # get image path from the user
+    path = pick_image_path()
+    if not path:
+        print("No file selected. Exiting.")
+        exit()
 
-# get image path from the user
-path = pick_image_path()
-if not path:
-    print("No file selected. Exiting.")
-    exit()
+    # loading image
+    img = LoadImage(path, x, y, x_active, y_active)
+    img.loadImage()
+    # getting the x and y coordinates of the patches from img
+    x_coordinate = img.x_cordinates
+    y_coordinate = img.y_cordinates
 
-# loading image
-img = LoadImage(path, x, y, x_active, y_active)
-img.loadImage()
-# getting the x and y coordinates of the patches from img
-x_coordinate = img.x_cordinates
-y_coordinate = img.y_cordinates
+    # window asking for a filename
+    root = tk.Tk()
+    root.withdraw()  # hide the empty main window
 
-# window asking for a filename
-root = tk.Tk()
-root.withdraw()  # hide the empty main window
+    file_name = simpledialog.askstring("Save File", "Enter a name for the file:")
+    root.destroy()
 
-file_name = simpledialog.askstring("Save File", "Enter a name for the file:")
-root.destroy()
-
-if not file_name:
-    print("No file name provided. Exiting.")
-    exit()
+    if not file_name:
+        print("No file name provided. Exiting.")
+        exit()
+    else:
+        with open(f"Film_Coordinates\{file_name}.json", "w") as f:
+            json.dump({"x": x_coordinate, "y": y_coordinate}, f)
 else:
-    with open(f"Film_Coordinates\{file_name}.json", "w") as f:
-        json.dump({"x": x_coordinate, "y": y_coordinate}, f)
+    path = pick_image_path()
+    if not path:
+        print("No file selected. Exiting.")
+        exit()
+    
+    test1 = parseXML(x, y, x_active, y_active, path)
+    test1.openXML()
+
+    
+
