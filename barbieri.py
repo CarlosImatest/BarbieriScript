@@ -1,0 +1,167 @@
+from tkinter import simpledialog
+
+import pyautogui as py
+from win32gui import GetCursorInfo
+import win32gui
+import win32con
+import win32api
+from pynput.keyboard import Key, Controller, Listener
+import time
+import threading
+
+class barbieri:
+    #class variables
+
+    # #constructor
+    # def __init__(self, gray_patch_x, gray_patch_y):
+    #     self.gray_patch_x = gray_patch_x
+    #     self.gray_patch_y = gray_patch_y
+    #     self.keyboard = Controller()
+    #     self.paused = False
+    #     self._start_listener()
+
+    #constructor
+    def __init__(self, grid):
+        self.grid = grid
+        self.keyboard = Controller()
+        self.paused = False
+        self._start_listener()
+
+    def _start_listener(self):
+        def on_press(key):
+            if key == Key.esc:
+                self.paused = not self.paused
+                if self.paused:
+                    print("\n Paused — press ESC again to resume")
+                else:
+                    print("Resumed")
+        
+        # deamon = True means the listener will automatically close when the main program exits
+        self._listener = Listener(on_press=on_press)
+        self._listener.daemon = True
+        self._listener.start()
+
+    def _wait_if_paused(self):
+        while self.paused:
+            time.sleep(0.1)  # sit idle until unpaused
+
+
+    def wait_for_mouse(self):
+        # Fetch the ACTUAL handles currently assigned by Windows
+        # IDC_WAIT is the spinning circle (32512)
+        # IDC_APPSTARTING is the arrow + circle (32515)
+        busy_handle = win32gui.LoadCursor(0, win32con.IDC_WAIT)
+        starting_handle = win32gui.LoadCursor(0, win32con.IDC_APPSTARTING)
+        
+        busy_handles = [busy_handle, starting_handle]
+        
+        # Give the app a split second to actually trigger the busy state
+        time.sleep(0.2) 
+        
+        while True:
+            self._wait_if_paused()  # Check if we should be paused before checking the cursor
+            info = win32gui.GetCursorInfo()
+            current_handle = info[1]
+            
+            if current_handle in busy_handles:
+                time.sleep(0.5)
+            else:
+                # The cursor is no longer in a busy state
+                break
+    
+    def start_measurement(self):
+        time.sleep(2) # give user time to switch to the barbieri app
+
+        #load image and locate the the x and y input fild
+        x_pos = py.locateOnScreen(r"Images\x_pos.PNG", confidence=0.90)
+        y_pos = py.locateOnScreen(r"Images\y_pos.PNG", confidence=0.90)
+        x_pos_center = (x_pos[0] + x_pos[2]//2)+60 #offset by 60
+        x_pos_y_center = x_pos[1] + x_pos[3]//2
+        y_pos_x_center = (y_pos[0] + y_pos[2]//2)+60 #offset by 60
+        y_pos_y_center = y_pos[1] + y_pos[3]//2
+
+        #load image and locate the measure button
+        x_measure = py.locateOnScreen(r"Images\Measure_button.PNG", confidence=0.90)
+        x_measure_center = (x_measure[0] + x_measure[2]//2)
+        y_measure_center = (x_measure[1] + x_measure[3]//2)
+
+        # #load image absolute for calibration
+        # calib_coordinates = py.locateOnScreen(r"Images\Absolute_button.PNG", confidence=0.90)
+        # x_calib_center = (calib_coordinates[0] + calib_coordinates[2]//2)
+        # y_calib_center = (calib_coordinates[1] + calib_coordinates[3]//2)
+
+        # #home for calibration
+        # x_calibration_home = 0
+        # y_calibration_home = 150
+
+        # py.moveTo(y_pos_x_center, y_pos_y_center)
+        # py.click(clicks=2, interval=0.2)   
+        # self.keyboard.type(str(y_calibration_home))
+        # self.keyboard.press(Key.enter)
+        # py.moveTo(x_pos_center, x_pos_y_center)
+        # py.click(clicks=2, interval=0.2)
+        # self.keyboard.type(str(x_calibration_home))
+        # self.keyboard.press(Key.enter)
+
+        # #start calibration
+        # py.moveTo(x_calib_center, y_calib_center)
+        # py.click()
+        
+        # for i in range(len(self.gray_patch_x)):
+        #     self._wait_if_paused() #check if we should be paused before starting the next patch
+        #     py.moveTo(y_pos_x_center, y_pos_y_center)
+        #     py.click(clicks=2, interval=0.2)
+        #     self.keyboard.type(str(self.gray_patch_y[i]))
+        #     self.keyboard.press(Key.enter)
+        #     self.wait_for_mouse()
+        #     # userI = input("press enter to continue to the next patch")
+        #     # if userI == "y":
+        #     #     break
+            
+        #     for j in range(len(self.gray_patch_x[i])):
+        #         self._wait_if_paused() #check if we should be paused before starting the next patch
+        #         py.moveTo(x_pos_center, x_pos_y_center)
+        #         py.click(clicks=2, interval=0.2)   
+        #         py.moveTo(x_pos_center, x_pos_y_center)
+        #         py.click(clicks=2, interval=0.2)
+        #         self.keyboard.type(str(self.gray_patch_x[i][j]))
+        #         self.keyboard.press(Key.enter)
+        #         self.wait_for_mouse()
+
+        #         py.moveTo(x_measure_center, y_measure_center)
+        #         py.click(clicks=1)
+        #         self.wait_for_mouse()
+
+        current_y = 0 
+        previous_y = 0
+        counter = 0
+
+        for patch, xy in self.grid.items():
+            current_y = xy[1]
+            print(current_y, previous_y)
+            if current_y != previous_y: #check if we need to move the y input (only move if the y value has changed since 
+                                        #the last patch, otherwise we can skip straight to the x input and measure)
+                self._wait_if_paused() #check if we should be paused before starting the next patch
+                py.moveTo(y_pos_x_center, y_pos_y_center)
+                py.click(clicks=2, interval=0.2)
+                self.keyboard.type(str(xy[1]))
+                self.keyboard.press(Key.enter)
+                self.wait_for_mouse()
+                previous_y = current_y
+
+            py.moveTo(x_pos_center, x_pos_y_center)
+            py.click(clicks=2, interval=0.2)   
+            py.moveTo(x_pos_center, x_pos_y_center)
+            py.click(clicks=2, interval=0.2)
+            self.keyboard.type(str(xy[0]))
+            self.keyboard.press(Key.enter)
+            self.wait_for_mouse()
+
+            py.moveTo(x_measure_center, y_measure_center)
+            py.click(clicks=1)
+            self.wait_for_mouse()
+            counter += 1
+
+        simpledialog.Dialog(None, title="Measurement Complete", text=f"All patches have been measured. Click OK to exit. last counter: {counter}")
+
+            
