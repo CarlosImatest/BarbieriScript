@@ -31,8 +31,10 @@ path = file_path()
 try:
     with open(path, "r") as f:
         grid = json.load(f)
-        # patch_x = grid["x"]
-        # patch_y = grid["y"]
+        use_xml = grid.popitem()[-1] #get the last item in the dict which is the use_xml bool and remove it from the dict so we are left with only the patch coordinates in grid
+        # if use_xml:
+        #     barbieri_instance = barbieri(grid, use_xml)
+
 except FileNotFoundError:
     print("File not found.")
     exit()
@@ -47,7 +49,7 @@ try:
 except IndexError:
     print("Window not found")
 
-barbieri_instance = barbieri(grid)
+barbieri_instance = barbieri(grid, use_xml)
 barbieri_instance.start_measurement()
 
 
