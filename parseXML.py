@@ -10,10 +10,11 @@ class parseXML:
     INCH_TO_BARBIERI_UNIT= 84.32
     CANVAS_W= 996
 
-    def __init__(self, film_w, film_h, active_w, active_h, path):
+    def __init__(self, film_w, film_h, active_w, active_h, path, use_xml):
         self.offset_x = ((film_w - active_w)/2) * self.INCH_TO_PX #convert inch to pixel
         self.offset_y = ((film_h - active_h)/2) * self.INCH_TO_PX
         self.path = path
+        self.use_xml = use_xml
 
     def openXML(self):
         tree = etree.parse(self.path)
@@ -49,6 +50,7 @@ class parseXML:
         self.saveFile(patch_map)
 
     def saveFile(self, patch_map):
+        patch_map["use_xml"] = self.use_xml
         file_name = simpledialog.askstring("Save File", "Enter a name for the file:")
 
         if not file_name:

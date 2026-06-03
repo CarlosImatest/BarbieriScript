@@ -130,15 +130,14 @@ if not use_xml:
         exit()
     else:
         with open(f"Film_Coordinates\{file_name}.json", "w") as f:
-            json.dump({"x": x_coordinate, "y": y_coordinate}, f)
+            json.dump({"x": x_coordinate, "y": y_coordinate, "use_xml": use_xml}, f)
 else:
     path = pick_image_path()
     if not path:
         print("No file selected. Exiting.")
         exit()
     
-    test1 = parseXML(x, y, x_active, y_active, path)
+    test1 = parseXML(x, y, x_active, y_active, path, use_xml)
     test1.openXML()
 
     
-
