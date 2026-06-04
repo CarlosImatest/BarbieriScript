@@ -17,13 +17,16 @@ class barbieri:
         self._start_listener()
         self.x_pos = py.locateOnScreen(r"Images\x_pos.PNG", confidence=0.90)
         self.y_pos = py.locateOnScreen(r"Images\y_pos.PNG", confidence=0.90)
+        self.calibration_button = py.locateOnScreen(r"Images\Absolute_button.PNG", confidence=0.90)
         self.x_measure = py.locateOnScreen(r"Images\Measure_button.PNG", confidence=0.90)
-        self.x_pos_center = (self.x_pos[0] + self.x_pos[2]//2)+60 #offset by 60
+        self.x_pos_center = (self.x_pos[0] + self.x_pos[2]//2)+60 #offset by 60 when measuring
         self.x_pos_y_center = self.x_pos[1] + self.x_pos[3]//2
-        self.y_pos_x_center = (self.y_pos[0] + self.y_pos[2]//2)+60 #offset by 60
+        self.y_pos_x_center = (self.y_pos[0] + self.y_pos[2]//2)+60 #offset by 60 when measuring
         self.y_pos_y_center = self.y_pos[1] + self.y_pos[3]//2
         self.x_measure_center = (self.x_measure[0] + self.x_measure[2]//2)
         self.y_measure_center = (self.x_measure[1] + self.x_measure[3]//2)
+        self.x_calibration_button_center = (self.calibration_button[0] + self.calibration_button[2]//2)
+        self.y_calibration_button_center = (self.calibration_button[1] + self.calibration_button[3]//2)
         self.use_xml = use_xml
 
         self.root = Tk()
@@ -78,8 +81,23 @@ class barbieri:
             self.start_measurement_xml()
         else:
             self.start_measurement_custom()
+    
+    def calibrate(self):
+
+        #move x axis to zero to set up for calibration
+        py.moveTo(self.y_pos_x_center, self.y_pos_y_center)
+        py.click(clicks=2, interval=0.2)
+        self.keyboard.type("0")
+        self.keyboard.press(Key.enter)
+        self.wait_for_mouse()
+
+        #start the calibration
+        py.moveTo(self.x_calibration_button_center, self.y_calibration_button_center)
+        py.click(clicks=1)
+        self.wait_for_mouse()
 
     def start_measurement_xml(self):
+        self.calibrate() #calibrate before starting measurements
         current_y = 0 
         previous_y = 0
         counter = 0
@@ -116,6 +134,7 @@ class barbieri:
         self.root.destroy()
 
     def start_measurement_custom(self):
+        self.calibrate() #calibrate before starting measurements
         gray_patch_x = self.grid["x"]
         gray_patch_y = self.grid["y"]
         counter = 0
