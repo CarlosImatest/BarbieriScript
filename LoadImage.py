@@ -5,6 +5,7 @@
 
 import cv2
 import tkinter as tk
+import subprocess
 
 class LoadImage:
     CANVAS_W = 996
@@ -21,6 +22,8 @@ class LoadImage:
         self.y_cordinates = []
         self.resized_img = None
         self.clean_img = None  # Clean copy for redrawing after undo
+
+        self.new_format_dict= {}
 
     def redraw(self):
         """Redraw all current points on a fresh copy of the clean image."""
@@ -51,7 +54,13 @@ class LoadImage:
             print("[Undo] Nothing to undo.")
 
     def loadImage(self):
-        img = cv2.imread(self.path)
+        subprocess.run([
+            r"C:\Program Files\Inkscape\bin\inkscape.exe",
+            self.path,
+            "--export-filename=temp.png"
+        ])
+
+        img = cv2.imread("temp.png")
         if img is None:
             print(f"Image not found at path: {self.path}")
             return
@@ -119,8 +128,15 @@ class LoadImage:
 
         self.x_cordinates = new_x_cordinates
         self.y_cordinates = new_y_cordinates
+    
+    def format_coordinates(self):
+        for y in self.y_cordinates:
+            for x in self.x_cordinates:
+                self.new_format_dict[f"patch{i+1:02d}"] = [x, y]
+                
 
     def promtFilmSize(self):
         win = tk.Tk()
         win.title("Film Size Input")
         win.resizable(False, False)
+        

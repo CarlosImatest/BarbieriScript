@@ -6,9 +6,12 @@ import win32gui
 import win32con
 from pynput.keyboard import Key, Controller, Listener
 import time
+import pygetwindow as gw
+
 
 
 class barbieri:
+    OFFSET_Y = 60 # head moves 60 in y when measuring
     #constructor
     def __init__(self, grid, use_xml):
         self.grid = grid
@@ -17,8 +20,9 @@ class barbieri:
         self._start_listener()
         self.x_pos = py.locateOnScreen(r"Images\x_pos.PNG", confidence=0.90)
         self.y_pos = py.locateOnScreen(r"Images\y_pos.PNG", confidence=0.90)
-        self.calibration_button = py.locateOnScreen(r"Images\Absolute_button.PNG", confidence=0.90)
+        self.calibration_button = py.locateOnScreen(r"Images\Absolute_button.PNG", confidence=0.85)
         self.x_measure = py.locateOnScreen(r"Images\Measure_button.PNG", confidence=0.90)
+        
         self.x_pos_center = (self.x_pos[0] + self.x_pos[2]//2)+60 #offset by 60 when measuring
         self.x_pos_y_center = self.x_pos[1] + self.x_pos[3]//2
         self.y_pos_x_center = (self.y_pos[0] + self.y_pos[2]//2)+60 #offset by 60 when measuring
@@ -27,6 +31,7 @@ class barbieri:
         self.y_measure_center = (self.x_measure[1] + self.x_measure[3]//2)
         self.x_calibration_button_center = (self.calibration_button[0] + self.calibration_button[2]//2)
         self.y_calibration_button_center = (self.calibration_button[1] + self.calibration_button[3]//2)
+
         self.use_xml = use_xml
 
         self.root = Tk()
@@ -85,16 +90,45 @@ class barbieri:
     def calibrate(self):
 
         #move x axis to zero to set up for calibration
+        py.moveTo(self.x_pos_center, self.x_pos_y_center)
+        py.click(clicks=2, interval=0.2)
+        self.keyboard.type("25")
+        self.keyboard.press(Key.enter)
+        self.keyboard.release(Key.enter)
+        self.wait_for_mouse()
+
+        #move y axis to zero to set up for calibration
         py.moveTo(self.y_pos_x_center, self.y_pos_y_center)
         py.click(clicks=2, interval=0.2)
-        self.keyboard.type("0")
+        self.keyboard.type("25")
         self.keyboard.press(Key.enter)
+        self.keyboard.release(Key.enter)
         self.wait_for_mouse()
 
         #start the calibration
         py.moveTo(self.x_calibration_button_center, self.y_calibration_button_center)
         py.click(clicks=1)
         self.wait_for_mouse()
+
+        ok_button_done_calibration = py.locateOnScreen(r"Images\ok_button_calibration_done.PNG", confidence=0.90)
+        x_ok_button_done_calibration_center = (ok_button_done_calibration[0] + ok_button_done_calibration[2]//2)
+        y_ok_button_done_calibration_center = (ok_button_done_calibration[1] + ok_button_done_calibration[3]//2)
+
+        win = gw.getWindowsWithTitle('Gateway')[0] # Replace with your window title
+        if win.title == 'Gateway':
+            win.activate() #bring the window to the foreground after calibration is done
+            time.sleep(0.5)
+            # keyboard = Controller()
+            # keyboard.press(Key.enter)
+            # keyboard.release(Key.enter)
+            # time.sleep(3) #give the app a moment to register the enter key press before we start the measurements
+            # self.wait_for_mouse() #wait for the app to finish any processing it needs to do after calibration before we start measurements
+            py.moveTo(x_ok_button_done_calibration_center, y_ok_button_done_calibration_center)
+            py.click(clicks=1)
+            self.wait_for_mouse() #wait for the app to finish any processing it needs to do
+
+    def move_to_xy(self):
+        print("Moving to next patch...")
 
     def start_measurement_xml(self):
         self.calibrate() #calibrate before starting measurements
@@ -109,8 +143,9 @@ class barbieri:
                                         #the last patch, otherwise we can skip straight to the x input and measure)
                 self._wait_if_paused() #check if we should be paused before starting the next patch
                 py.moveTo(self.y_pos_x_center, self.y_pos_y_center)
+                time.sleep(0.2) #give a moment for the mouse to move before clicking
                 py.click(clicks=2, interval=0.2)
-                self.keyboard.type(str(xy[1]))
+                self.keyboard.type(str(xy[1] - self.OFFSET_Y)) #add offset to y value to account for the head moving down when measuring
                 self.keyboard.press(Key.enter)
                 self.wait_for_mouse()
                 previous_y = current_y
@@ -135,15 +170,17 @@ class barbieri:
 
     def start_measurement_custom(self):
         self.calibrate() #calibrate before starting measurements
+        self.wait_for_mouse() #wait for calibration to finish before starting measurements
         gray_patch_x = self.grid["x"]
         gray_patch_y = self.grid["y"]
         counter = 0
 
-        for i in range(len(gray_patch_x)):
+        for i in range(len(gray_patch_y)):
             self._wait_if_paused() #check if we should be paused before starting the next patch
             py.moveTo(self.y_pos_x_center, self.y_pos_y_center)
+            time.sleep(0.2) #give a moment for the mouse to move before clicking
             py.click(clicks=2, interval=0.2)
-            self.keyboard.type(str(gray_patch_y[i]))
+            self.keyboard.type(str(gray_patch_y[i] - self.OFFSET_Y)) #add offset to y value to account for the head moving down when measuring
             self.keyboard.press(Key.enter)
             self.wait_for_mouse()
 
