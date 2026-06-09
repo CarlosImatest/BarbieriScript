@@ -5,6 +5,8 @@
 #heads moves 60 in y when you click the measure button
 #47mm from edge to the first patch (161barbieri units)
 
+import time
+
 from pynput.keyboard import Controller
 from barbieri import barbieri
 import json
@@ -31,7 +33,7 @@ path = file_path()
 try:
     with open(path, "r") as f:
         grid = json.load(f)
-        use_xml = grid.popitem()[-1] #get the last item in the dict which is the use_xml bool and remove it from the dict so we are left with only the patch coordinates in grid
+        use_xml = grid.pop("use_xml") #get the last item in the dict which is the use_xml bool and remove it from the dict so we are left with only the patch coordinates in grid
         # if use_xml:
         #     barbieri_instance = barbieri(grid, use_xml)
 
@@ -39,7 +41,7 @@ except FileNotFoundError:
     print("File not found.")
     exit()
     
-
+time.sleep(1) #give the user a moment to close the file dialog before we try to find the window
 # Find the window by its title
 try:
     win = gw.getWindowsWithTitle('Gateway')[0] # Replace with your window title

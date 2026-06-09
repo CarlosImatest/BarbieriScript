@@ -104,6 +104,8 @@ def pick_image_path():
 # Main execution
 # Get film size input from the user
 x, y, x_active, y_active, use_xml = film_size_input_window().values()
+
+print(not use_xml)
 if not use_xml:
     # get image path from the user
     path = pick_image_path()
