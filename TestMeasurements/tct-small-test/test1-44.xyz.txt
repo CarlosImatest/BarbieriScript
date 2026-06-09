@@ -1,0 +1,63 @@
+ORIGINATOR          "Barbieri Gateway WIN 4.7.19, Speclib Version: 5.45"
+DESCRIPTOR          "Output Characterisation"
+CREATED             "June 9, 2026  12:25"
+
+INSTRUMENTATION     "Spectro LFP  ver:5.20 RT S2 S3,SN=B104450,MN=67403006,67002009"
+MEASUREMENT_GEOMETRY "diffuse/0"
+
+BARBIERI_INFO_0     "Mode=Transmission,Aperture=8,IntegrationTime=618"
+BARBIERI_INFO_1     "<Type>eSpotJob</Type>, <deltaE>delta E</deltaE>, <deltaETolerance>3.00</deltaETolerance>, <JobName>test1</JobName>, Spectro_xy_version=2, Spectro_xy_version=2,File_Format=BARBIERI,Patches_X=1,"
+BARBIERI_INFO_2     "Patches_Y=24,Number_of_Patches=24,Number_of_Pages=1,Target_Size_X=20,Target_Size_Y=20,MT,Illuminant=D50,Observer=2,Density=Status A,Save_Spectral=1,Save_Lab=1,Save_XYZ=1,Save_Density=1,Save_CxF=1,"
+BARBIERI_INFO_3     "Fast_Measuring_Mode=1,Use_AutoPositioning=1,Use_AutoRecognition=0,Use_AutoPositioning_Lines=1,Run_Profiler=0,Cloud_Connection=0,Reference_File_Name=,Quality_Control=0,Control_Reference_File=,"
+BARBIERI_INFO_4     "Control_Settings_File=,Profile_File_Name=,Target_Image_Preview=,Spot_Measurement_Mode=0,Spot_Measurement=1,Display_Values=1,Number_of_Measurements_per_Patch_y=1,"
+BARBIERI_INFO_5     "Distance_of_Measurements_per_Patch_y=10,Number_of_Measurements_per_Patch_x=1,Distance_of_Measurements_per_Patch_x=10,Average_Method=1,Target_Header_Size=20,AutoPositioning_Mode=0,"
+BARBIERI_INFO_6     "Continuous_Measurement_Mode=0,Continuous_Measurement_Page=1,Save_Continuous_Measurement=0,Continuous_Measurement_Delay=0,CF_Option=1,Calibration_Frequency=0,Measuring_Aperture=8,Slope_Factor=1.000,"
+BARBIERI_INFO_7     "Job_protection=-1,Measurement_Condition=M0,Translucency_Mode=0,Translucency_IntTime=1000,Save_Debug=0,Patch_Size_X_mm=0.00,Patch_Size_Y_mm=0.00,Separator_Size_X_mm=0.00,Separator_Size_Y_mm=0.00,"
+BARBIERI_INFO_8     "Target_Type=0,Ignore_TargetLines=P1L0T0R0B0F1,Use_QrCode=-1,AutoposLinesInverted=0,CustomTextInOutputFile=,Transmission_Workflow=0,Light_Box_Illumination=,Substrate_Spectro=,"
+
+MEASUREMENT_SOURCE  "Illumination=D50	ObserverAngle=2degree	WhiteBase=Abs	Filter=No"
+ILLUMINANT          "D50"
+OBSERVER            "2"
+
+PRINT_CONDITIONS    "No printer defined, No resolution defined, No ink defined, No paper defined, No screening defined"
+
+AUTOPOS_COORD       "0, 0, 0, 0, 0, 0, 0, 0"
+
+NUMBER_OF_FIELDS    6
+KEYWORD             SAMPLE_NAME
+KEYWORD             DATE_MEASURED
+BEGIN_DATA_FORMAT
+SAMPLE_ID	SAMPLE_NAME	XYZ_X	XYZ_Y	XYZ_Z	DATE_MEASURED	
+END_DATA_FORMAT
+
+NUMBER_OF_SETS      24
+LGOROWLENGTH        1
+
+BEGIN_DATA
+1	Sample_1	7.322	6.364	2.245	2026-06-09T12:25:02	
+2	Sample_2	32.187	31.272	16.441	2026-06-09T12:25:02	
+3	Sample_3	15.020	17.822	25.106	2026-06-09T12:25:02	
+4	Sample_4	8.311	11.122	3.407	2026-06-09T12:25:02	
+5	Sample_5	20.231	20.702	27.316	2026-06-09T12:25:02	
+6	Sample_6	25.462	35.123	34.002	2026-06-09T12:25:02	
+7	Sample_7	30.036	24.267	1.487	2026-06-09T12:25:02	
+8	Sample_8	9.528	9.746	25.643	2026-06-09T12:25:02	
+9	Sample_9	18.548	13.068	6.228	2026-06-09T12:25:02	
+10	Sample_10	4.680	3.680	7.456	2026-06-09T12:25:02	
+11	Sample_11	29.600	34.221	3.886	2026-06-09T12:25:02	
+12	Sample_12	40.043	36.015	2.095	2026-06-09T12:25:02	
+13	Sample_13	4.760	3.795	18.658	2026-06-09T12:25:02	
+14	Sample_14	12.334	21.059	6.248	2026-06-09T12:25:02	
+15	Sample_15	10.620	5.780	1.143	2026-06-09T12:25:02	
+16	Sample_16	48.200	45.305	1.828	2026-06-09T12:25:02	
+17	Sample_17	18.911	12.730	17.042	2026-06-09T12:25:02	
+18	Sample_18	7.177	11.725	28.596	2026-06-09T12:25:02	
+19	Sample_19	65.068	68.146	55.094	2026-06-09T12:25:02	
+20	Sample_20	43.366	46.170	38.826	2026-06-09T12:25:02	
+21	Sample_21	28.662	30.858	25.346	2026-06-09T12:25:02	
+22	Sample_22	15.340	16.888	13.595	2026-06-09T12:25:02	
+23	Sample_23	5.470	6.332	4.907	2026-06-09T12:25:02	
+24	Sample_24	1.135	1.403	1.181	2026-06-09T12:25:02	
+END_DATA
+
+

@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cc:CxF xmlns:cc="http://colorexchangeformat.com/CxF3-core" xmlns:bb="http://barbierielectronic.com/CxF3-namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<cc:CxF xmlns:cc="http://colorexchangeformat.com/CxF3-core" xmlns:bb="http://barbierielectronics.com/CxF3-namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<cc:FileInformation>
-		<cc:Creator>BARBIERI electronic snc</cc:Creator>
-		<cc:CreationDate>2026-06-08T17:07:00</cc:CreationDate>
+		<cc:Creator>Barbieri electronics srl</cc:Creator>
+		<cc:CreationDate>2026-06-09T13:25:00</cc:CreationDate>
 		<cc:Description>Output Characterisation</cc:Description>
 		<cc:Tag Name="28178_TargetType" Value="CGATS.17"/>
 	</cc:FileInformation>
 	<cc:Resources>
 		<cc:ObjectCollection>
 			<cc:Object ObjectType="Target" Name="Sample_1" Id="c1">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>17.091</cc:L>
-						<cc:A>1.184</cc:A>
-						<cc:B>-1.333</cc:B>
+						<cc:L>30.312</cc:L>
+						<cc:A>12.110</cc:A>
+						<cc:B>19.700</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6070</cc:Density>
+						<cc:Density>0.9260</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6420</cc:Density>
+						<cc:Density>1.3170</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.5960</cc:Density>
+						<cc:Density>1.8110</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6330</cc:Density>
+						<cc:Density>1.1590</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.006963 0.008704 0.023338 0.024566 0.027517 0.026618 0.025485 0.024891 0.024128 0.024163 0.024256 0.024372 0.024549 0.024679 0.024013 0.022422 0.022547 0.022615 0.021788 0.021745 0.022742 0.022701 0.024444 0.025274 0.025297 0.024301 0.024399 0.023495 0.023252 0.023369 0.024245 0.025986 0.029573 0.034888 0.043405 0.051029 0.068501 0.092029 0.122010 0.170951 0.217306 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.035520 0.044400 0.032300 0.025700 0.022800 0.017300 0.012700 0.012500 0.019000 0.031400 0.049300 0.067100 0.074500 0.075900 0.067000 0.049600 0.039900 0.035100 0.036100 0.040300 0.054000 0.077100 0.103200 0.123900 0.124100 0.117600 0.110200 0.106400 0.103900 0.106500 0.115600 0.139900 0.168700 0.208400 0.260000 0.299500 0.368200 0.443600 0.521600 0.623100 0.697800 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="700"/>
@@ -44,34 +44,34 @@
 				</cc:TagCollection>
 			</cc:Object>
 			<cc:Object ObjectType="Target" Name="Sample_2" Id="c2">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>27.169</cc:L>
-						<cc:A>6.424</cc:A>
-						<cc:B>7.834</cc:B>
+						<cc:L>62.736</cc:L>
+						<cc:A>7.466</cc:A>
+						<cc:B>18.941</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.1260</cc:Density>
+						<cc:Density>0.3760</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.3470</cc:Density>
+						<cc:Density>0.5510</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.4860</cc:Density>
+						<cc:Density>0.7840</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.2680</cc:Density>
+						<cc:Density>0.4880</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.003543 0.004428 0.023338 0.029830 0.034210 0.033877 0.031240 0.031529 0.034112 0.039160 0.045166 0.052105 0.055023 0.055315 0.053171 0.045707 0.041626 0.039141 0.039218 0.040881 0.048109 0.058498 0.069840 0.077564 0.077635 0.074639 0.070583 0.068746 0.066312 0.067509 0.070138 0.077958 0.087850 0.102047 0.118062 0.131465 0.154344 0.180586 0.210903 0.252938 0.289445 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.213360 0.266700 0.181800 0.179100 0.178700 0.166400 0.154400 0.156100 0.182300 0.220000 0.265100 0.304100 0.320400 0.328600 0.319100 0.287100 0.264000 0.251800 0.255300 0.267600 0.304100 0.356600 0.405000 0.435100 0.432200 0.418900 0.403600 0.394800 0.386000 0.384800 0.392700 0.417800 0.446100 0.482800 0.526400 0.557100 0.607600 0.658800 0.709400 0.771700 0.815700 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="654"/>
@@ -79,34 +79,34 @@
 				</cc:TagCollection>
 			</cc:Object>
 			<cc:Object ObjectType="Target" Name="Sample_3" Id="c3">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>21.388</cc:L>
-						<cc:A>-3.907</cc:A>
-						<cc:B>-11.628</cc:B>
+						<cc:L>49.280</cc:L>
+						<cc:A>-12.346</cc:A>
+						<cc:B>-21.963</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6090</cc:Density>
+						<cc:Density>0.9920</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.4550</cc:Density>
+						<cc:Density>0.6990</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.2850</cc:Density>
+						<cc:Density>0.5430</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.5060</cc:Density>
+						<cc:Density>0.7900</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.006963 0.008704 0.029968 0.041528 0.049084 0.050009 0.049326 0.052271 0.057408 0.062490 0.064403 0.063030 0.059255 0.051911 0.044595 0.035358 0.031219 0.029573 0.027888 0.027834 0.027990 0.028812 0.028809 0.027017 0.025297 0.023433 0.023528 0.023495 0.022391 0.023369 0.023379 0.024254 0.026094 0.029655 0.036460 0.042380 0.057229 0.077270 0.106323 0.154379 0.201276 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.124480 0.155600 0.202300 0.256500 0.268500 0.272400 0.275400 0.289400 0.317300 0.338300 0.351300 0.348100 0.335500 0.303000 0.263100 0.207600 0.174900 0.153100 0.142200 0.140500 0.144200 0.150300 0.149000 0.130200 0.110800 0.094300 0.082700 0.077600 0.073800 0.074800 0.081500 0.101200 0.125700 0.161100 0.209100 0.247000 0.314800 0.391700 0.473600 0.582200 0.664100 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="601"/>
@@ -114,34 +114,34 @@
 				</cc:TagCollection>
 			</cc:Object>
 			<cc:Object ObjectType="Target" Name="Sample_4" Id="c4">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>18.439</cc:L>
-						<cc:A>-3.100</cc:A>
-						<cc:B>0.396</cc:B>
+						<cc:L>39.785</cc:L>
+						<cc:A>-19.589</cc:A>
+						<cc:B>27.058</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6470</cc:Density>
+						<cc:Density>1.1400</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.5530</cc:Density>
+						<cc:Density>0.8720</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.5950</cc:Density>
+						<cc:Density>1.6830</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.5910</cc:Density>
+						<cc:Density>0.9710</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.003543 0.004428 0.026520 0.023981 0.027517 0.026618 0.025485 0.024891 0.024128 0.024996 0.025928 0.027733 0.028781 0.030636 0.030874 0.028459 0.026883 0.026094 0.025274 0.025224 0.025366 0.025320 0.025317 0.023531 0.022680 0.022565 0.021785 0.021755 0.021530 0.021638 0.021648 0.022521 0.023485 0.026166 0.030384 0.035461 0.047690 0.065983 0.092379 0.138680 0.186135 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.053360 0.066700 0.044000 0.031400 0.028100 0.022700 0.017600 0.017000 0.024800 0.042700 0.073300 0.110700 0.133200 0.156800 0.161600 0.143100 0.124000 0.109100 0.101400 0.100500 0.104300 0.110000 0.109800 0.094900 0.079300 0.066300 0.057400 0.053600 0.050800 0.052000 0.057800 0.074700 0.096000 0.127800 0.172500 0.208700 0.275300 0.352700 0.437000 0.551500 0.639800 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="550"/>
@@ -149,34 +149,34 @@
 				</cc:TagCollection>
 			</cc:Object>
 			<cc:Object ObjectType="Target" Name="Sample_5" Id="c5">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>22.336</cc:L>
-						<cc:A>0.371</cc:A>
-						<cc:B>-12.469</cc:B>
+						<cc:L>52.621</cc:L>
+						<cc:A>1.329</cc:A>
+						<cc:B>-20.038</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.4900</cc:Density>
+						<cc:Density>0.7100</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.4560</cc:Density>
+						<cc:Density>0.6950</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.2330</cc:Density>
+						<cc:Density>0.4970</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.4620</cc:Density>
+						<cc:Density>0.7010</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.003543 0.004428 0.026520 0.047377 0.055778 0.056462 0.055903 0.058909 0.064896 0.067489 0.067748 0.064711 0.060948 0.051911 0.043738 0.035358 0.031219 0.029573 0.028760 0.029573 0.031489 0.034051 0.035793 0.035732 0.034020 0.031244 0.029628 0.028717 0.028420 0.028562 0.029441 0.032916 0.037401 0.045354 0.057295 0.066597 0.086710 0.112866 0.144669 0.193628 0.238681 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.124480 0.155600 0.225800 0.290100 0.304100 0.305800 0.308000 0.322000 0.347400 0.362700 0.368500 0.358200 0.341300 0.303500 0.261100 0.206500 0.176900 0.160000 0.156000 0.160400 0.177600 0.202600 0.221800 0.221400 0.206200 0.188300 0.173300 0.166100 0.160000 0.161300 0.170500 0.197200 0.228000 0.269700 0.322500 0.361600 0.428300 0.499700 0.572200 0.664600 0.730300 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="504"/>
@@ -184,34 +184,34 @@
 				</cc:TagCollection>
 			</cc:Object>
 			<cc:Object ObjectType="Target" Name="Sample_6" Id="c6">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>30.995</cc:L>
-						<cc:A>-20.673</cc:A>
-						<cc:B>-5.815</cc:B>
+						<cc:L>65.844</cc:L>
+						<cc:A>-31.994</cc:A>
+						<cc:B>-7.715</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.5540</cc:Density>
+						<cc:Density>0.8650</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.0590</cc:Density>
+						<cc:Density>0.3500</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.1480</cc:Density>
+						<cc:Density>0.4280</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.2280</cc:Density>
+						<cc:Density>0.4980</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.010506 0.013132 0.036598 0.052056 0.062471 0.066141 0.067412 0.071354 0.081536 0.093318 0.105386 0.113454 0.115971 0.114885 0.108915 0.093139 0.079782 0.068714 0.059262 0.054797 0.048983 0.044528 0.038412 0.032246 0.028786 0.026905 0.025271 0.025236 0.024114 0.025100 0.025111 0.026852 0.029573 0.034016 0.041669 0.048434 0.064165 0.086820 0.116781 0.165718 0.212853 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.231120 0.288900 0.261000 0.313900 0.335800 0.350800 0.359900 0.376600 0.415500 0.454500 0.492300 0.518800 0.526400 0.525300 0.511900 0.469100 0.426700 0.384800 0.346900 0.325500 0.296400 0.268000 0.234000 0.182300 0.148600 0.124100 0.107900 0.100900 0.095200 0.095700 0.103000 0.124300 0.150500 0.188000 0.237800 0.276500 0.344900 0.420700 0.501000 0.605500 0.683400 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="448"/>
@@ -219,34 +219,34 @@
 				</cc:TagCollection>
 			</cc:Object>
 			<cc:Object ObjectType="Target" Name="Sample_7" Id="c7">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>25.441</cc:L>
-						<cc:A>19.247</cc:A>
-						<cc:B>13.038</cc:B>
+						<cc:L>56.354</cc:L>
+						<cc:A>27.072</cc:A>
+						<cc:B>72.311</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>0.9870</cc:Density>
+						<cc:Density>0.2960</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.5050</cc:Density>
+						<cc:Density>0.7630</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6040</cc:Density>
+						<cc:Density>2.4090</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.2840</cc:Density>
+						<cc:Density>0.5560</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.003543 0.004428 0.023338 0.022811 0.026030 0.025811 0.024663 0.024891 0.024128 0.024163 0.024256 0.025212 0.026242 0.028934 0.030874 0.031909 0.031219 0.030443 0.031374 0.033052 0.040236 0.053259 0.071586 0.094122 0.102931 0.105884 0.106311 0.105294 0.103344 0.104725 0.107372 0.116937 0.126991 0.141296 0.156258 0.167791 0.189028 0.211841 0.237920 0.275615 0.308148 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.106640 0.133300 0.035200 0.009400 0.006700 0.004500 0.003100 0.002900 0.004100 0.009600 0.028100 0.063000 0.091300 0.134300 0.164900 0.176200 0.173100 0.172500 0.183900 0.201500 0.249300 0.322400 0.402800 0.481500 0.507900 0.514900 0.511800 0.507900 0.503100 0.502900 0.509300 0.529100 0.551600 0.580600 0.614900 0.639100 0.678700 0.719000 0.759200 0.809800 0.844900 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="698"/>
@@ -254,34 +254,34 @@
 				</cc:TagCollection>
 			</cc:Object>
 			<cc:Object ObjectType="Target" Name="Sample_8" Id="c8">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>18.916</cc:L>
-						<cc:A>2.181</cc:A>
-						<cc:B>-16.378</cc:B>
+						<cc:L>37.383</cc:L>
+						<cc:A>1.062</cc:A>
+						<cc:B>-43.427</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6430</cc:Density>
+						<cc:Density>1.2830</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.5790</cc:Density>
+						<cc:Density>1.0050</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.2420</cc:Density>
+						<cc:Density>0.5030</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.5880</cc:Density>
+						<cc:Density>1.0760</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.003543 0.004428 0.023338 0.043283 0.051315 0.053236 0.055081 0.059738 0.063232 0.061657 0.056039 0.048743 0.043172 0.035742 0.030016 0.025872 0.025149 0.024354 0.024402 0.023485 0.024492 0.024447 0.024444 0.023531 0.022680 0.022565 0.022656 0.022625 0.021530 0.022503 0.022513 0.022521 0.023485 0.025294 0.028647 0.032001 0.042488 0.058169 0.082793 0.127341 0.173667 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.088880 0.111100 0.196500 0.267100 0.283900 0.292800 0.303700 0.326800 0.345500 0.341000 0.319600 0.282800 0.251500 0.198700 0.150800 0.100800 0.077700 0.064700 0.059800 0.060200 0.065300 0.072600 0.075900 0.068100 0.057100 0.047600 0.041100 0.038200 0.036300 0.037600 0.042300 0.056100 0.074300 0.102300 0.142900 0.176800 0.241100 0.317700 0.403000 0.521700 0.614100 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="650"/>
@@ -289,34 +289,34 @@
 				</cc:TagCollection>
 			</cc:Object>
 			<cc:Object ObjectType="Target" Name="Sample_9" Id="c9">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>20.278</cc:L>
-						<cc:A>12.590</cc:A>
-						<cc:B>2.944</cc:B>
+						<cc:L>42.866</cc:L>
+						<cc:A>34.899</cc:A>
+						<cc:B>16.975</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.2110</cc:Density>
+						<cc:Density>0.4460</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6170</cc:Density>
+						<cc:Density>1.1530</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.5830</cc:Density>
+						<cc:Density>1.2260</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.4780</cc:Density>
+						<cc:Density>0.8160</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.003543 0.004428 0.019890 0.025151 0.028261 0.027424 0.025485 0.025721 0.025792 0.026662 0.027601 0.028574 0.028781 0.027232 0.025728 0.024147 0.023414 0.023485 0.022659 0.023485 0.024492 0.027939 0.036666 0.051418 0.060189 0.064225 0.066226 0.066135 0.066312 0.068375 0.071870 0.080557 0.091329 0.105536 0.122402 0.134924 0.157812 0.184058 0.213517 0.254682 0.292117 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.088880 0.111100 0.079200 0.078600 0.074800 0.063200 0.053400 0.053900 0.068400 0.087900 0.109500 0.123900 0.125400 0.115300 0.096500 0.070400 0.058200 0.053700 0.058300 0.067600 0.097200 0.151300 0.223900 0.313800 0.353800 0.371800 0.376500 0.376600 0.376900 0.381600 0.393200 0.421500 0.451500 0.488900 0.532800 0.563300 0.613200 0.663700 0.713500 0.775400 0.818000 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="602"/>
@@ -324,34 +324,34 @@
 				</cc:TagCollection>
 			</cc:Object>
 			<cc:Object ObjectType="Target" Name="Sample_10" Id="c10">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>17.101</cc:L>
-						<cc:A>0.171</cc:A>
-						<cc:B>-3.215</cc:B>
+						<cc:L>22.583</cc:L>
+						<cc:A>16.078</cc:A>
+						<cc:B>-23.224</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6490</cc:Density>
+						<cc:Density>1.2040</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6320</cc:Density>
+						<cc:Density>1.6250</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.5570</cc:Density>
+						<cc:Density>1.0690</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6380</cc:Density>
+						<cc:Density>1.4340</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.000000 0.000000 0.026520 0.027490 0.030492 0.029038 0.027129 0.027380 0.027456 0.027496 0.026765 0.026893 0.025395 0.024679 0.024013 0.023285 0.023414 0.022615 0.022659 0.022615 0.022742 0.022701 0.022698 0.022659 0.022680 0.022565 0.021785 0.021755 0.021530 0.021638 0.022513 0.022521 0.024354 0.027038 0.032120 0.038056 0.050292 0.070324 0.096737 0.143913 0.191479 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.017760 0.022200 0.082100 0.099700 0.096700 0.086300 0.079200 0.083400 0.096000 0.104400 0.106300 0.097500 0.085800 0.063000 0.041800 0.022900 0.016100 0.013100 0.013500 0.015500 0.022500 0.035200 0.051000 0.064900 0.065700 0.062000 0.057700 0.055500 0.054300 0.056600 0.063500 0.081900 0.104800 0.138100 0.184400 0.221400 0.288900 0.366200 0.449800 0.562500 0.648200 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="550"/>
@@ -359,34 +359,34 @@
 				</cc:TagCollection>
 			</cc:Object>
 			<cc:Object ObjectType="Target" Name="Sample_11" Id="c11">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>29.414</cc:L>
-						<cc:A>-5.076</cc:A>
-						<cc:B>18.188</cc:B>
+						<cc:L>65.138</cc:L>
+						<cc:A>-12.436</cc:A>
+						<cc:B>67.669</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.2920</cc:Density>
+						<cc:Density>0.5090</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.1840</cc:Density>
+						<cc:Density>0.4290</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.5900</cc:Density>
+						<cc:Density>1.7990</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.2170</cc:Density>
+						<cc:Density>0.4570</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.003543 0.004428 0.023338 0.023396 0.026773 0.026618 0.025485 0.025721 0.024960 0.024996 0.025928 0.030254 0.035553 0.047656 0.060032 0.068130 0.068509 0.065235 0.063619 0.063495 0.065602 0.067229 0.067221 0.061005 0.054083 0.048602 0.044441 0.042640 0.040476 0.041544 0.043295 0.048507 0.055667 0.067159 0.081601 0.093409 0.116191 0.144121 0.176043 0.223283 0.265399 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.177760 0.222200 0.070400 0.028700 0.023600 0.017700 0.013500 0.012200 0.018000 0.036400 0.077200 0.142300 0.193700 0.275300 0.342800 0.385000 0.386100 0.376800 0.369500 0.368800 0.375700 0.386000 0.384800 0.356800 0.326400 0.298500 0.276100 0.265400 0.255700 0.255000 0.264100 0.291900 0.323800 0.365600 0.416500 0.453300 0.514400 0.577700 0.640800 0.719800 0.774500 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="497"/>
@@ -394,34 +394,34 @@
 				</cc:TagCollection>
 			</cc:Object>
 			<cc:Object ObjectType="Target" Name="Sample_12" Id="c12">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>31.614</cc:L>
-						<cc:A>18.073</cc:A>
-						<cc:B>23.302</cc:B>
+						<cc:L>66.531</cc:L>
+						<cc:A>17.302</cc:A>
+						<cc:B>83.519</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>0.8670</cc:Density>
+						<cc:Density>0.2280</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.3030</cc:Density>
+						<cc:Density>0.5250</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6040</cc:Density>
+						<cc:Density>2.2720</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.1070</cc:Density>
+						<cc:Density>0.3990</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.006963 0.008704 0.019890 0.021641 0.025286 0.025811 0.024663 0.024891 0.024128 0.024163 0.024256 0.026052 0.028781 0.035742 0.043738 0.050019 0.052032 0.052188 0.054905 0.058277 0.070851 0.090802 0.112617 0.132468 0.137823 0.137128 0.135067 0.133141 0.130041 0.129825 0.131617 0.139458 0.148736 0.161357 0.175356 0.185953 0.204636 0.225732 0.250120 0.284337 0.314382 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.177760 0.222200 0.049900 0.013200 0.009100 0.006200 0.004300 0.004100 0.005600 0.012300 0.035900 0.083400 0.125000 0.196000 0.258200 0.302500 0.311800 0.316700 0.331000 0.350100 0.399000 0.467700 0.534500 0.587300 0.598300 0.595400 0.586100 0.579400 0.570800 0.567000 0.569600 0.583600 0.600900 0.624300 0.653300 0.674000 0.708400 0.743700 0.778600 0.822600 0.853500 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="445"/>
@@ -429,34 +429,34 @@
 				</cc:TagCollection>
 			</cc:Object>
 			<cc:Object ObjectType="Target" Name="Sample_13" Id="c13">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>17.259</cc:L>
-						<cc:A>2.462</cc:A>
-						<cc:B>-11.674</cc:B>
+						<cc:L>22.982</cc:L>
+						<cc:A>15.397</cc:A>
+						<cc:B>-54.632</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6710</cc:Density>
+						<cc:Density>1.7610</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6350</cc:Density>
+						<cc:Density>1.5100</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.3660</cc:Density>
+						<cc:Density>0.6220</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6400</cc:Density>
+						<cc:Density>1.5270</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.003543 0.004428 0.023338 0.035679 0.040904 0.041137 0.041927 0.044804 0.045760 0.043326 0.037638 0.031935 0.028781 0.025530 0.024013 0.023285 0.022547 0.022615 0.022659 0.022615 0.022742 0.021827 0.021825 0.021788 0.021808 0.020830 0.020914 0.020885 0.020669 0.020772 0.020782 0.020789 0.021745 0.021805 0.023439 0.025082 0.029481 0.039937 0.056648 0.093325 0.136262 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.035520 0.044400 0.158400 0.207000 0.217500 0.221100 0.230400 0.251800 0.262700 0.245400 0.211500 0.167400 0.136200 0.091300 0.057200 0.029800 0.020200 0.015400 0.014200 0.014800 0.017600 0.021900 0.025000 0.023400 0.019100 0.015600 0.013300 0.012300 0.011700 0.012300 0.014400 0.021500 0.031700 0.048800 0.077000 0.102800 0.156200 0.225500 0.309200 0.433500 0.537800 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="701"/>
@@ -464,34 +464,34 @@
 				</cc:TagCollection>
 			</cc:Object>
 			<cc:Object ObjectType="Target" Name="Sample_14" Id="c14">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>23.072</cc:L>
-						<cc:A>-15.027</cc:A>
-						<cc:B>6.923</cc:B>
+						<cc:L>53.014</cc:L>
+						<cc:A>-45.546</cc:A>
+						<cc:B>34.382</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6570</cc:Density>
+						<cc:Density>1.2520</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.2870</cc:Density>
+						<cc:Density>0.5150</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.5940</cc:Density>
+						<cc:Density>1.4020</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.4480</cc:Density>
+						<cc:Density>0.7180</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.003543 0.004428 0.019890 0.026905 0.028261 0.026618 0.025485 0.024891 0.024128 0.025829 0.028438 0.035297 0.041479 0.051060 0.057459 0.056056 0.050298 0.043490 0.037475 0.034792 0.031489 0.027939 0.026190 0.023531 0.021808 0.021698 0.021785 0.021755 0.020669 0.021638 0.021648 0.021655 0.022615 0.023549 0.026911 0.030272 0.039887 0.055565 0.079307 0.122980 0.169214 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.142240 0.177800 0.076200 0.051400 0.047400 0.041100 0.034900 0.034000 0.047200 0.076100 0.126000 0.191200 0.235300 0.294500 0.331100 0.329800 0.301700 0.265200 0.229800 0.208800 0.179900 0.152000 0.122300 0.083800 0.062200 0.048300 0.039900 0.036600 0.034200 0.035000 0.039300 0.052500 0.069800 0.096700 0.136200 0.169500 0.232800 0.308900 0.394400 0.513600 0.606600 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="655"/>
@@ -499,34 +499,34 @@
 				</cc:TagCollection>
 			</cc:Object>
 			<cc:Object ObjectType="Target" Name="Sample_15" Id="c15">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>17.922</cc:L>
-						<cc:A>7.470</cc:A>
-						<cc:B>0.598</cc:B>
+						<cc:L>28.851</cc:L>
+						<cc:A>46.348</cc:A>
+						<cc:B>29.296</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.3850</cc:Density>
+						<cc:Density>0.5850</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6480</cc:Density>
+						<cc:Density>1.8690</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6080</cc:Density>
+						<cc:Density>2.1060</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.5800</cc:Density>
+						<cc:Density>1.1160</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.003543 0.004428 0.019890 0.022811 0.026030 0.025811 0.024663 0.024061 0.024128 0.024163 0.023419 0.023531 0.023702 0.022977 0.023155 0.022422 0.022547 0.021745 0.021788 0.021745 0.021868 0.021827 0.024444 0.031374 0.038381 0.043395 0.047056 0.048731 0.049950 0.052796 0.056284 0.064965 0.074803 0.088092 0.105040 0.117626 0.141337 0.168431 0.198702 0.241599 0.279648 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.035520 0.044400 0.023500 0.014400 0.013000 0.009300 0.005900 0.005800 0.010500 0.017500 0.026700 0.033500 0.034400 0.030100 0.022400 0.013100 0.009600 0.008200 0.009500 0.012300 0.024000 0.052400 0.104200 0.192400 0.245700 0.278900 0.295900 0.302000 0.309200 0.318800 0.334300 0.366900 0.400400 0.441800 0.490000 0.523700 0.578300 0.633700 0.688500 0.756500 0.803200 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="598"/>
@@ -534,34 +534,34 @@
 				</cc:TagCollection>
 			</cc:Object>
 			<cc:Object ObjectType="Target" Name="Sample_16" Id="c16">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>36.753</cc:L>
-						<cc:A>16.033</cc:A>
-						<cc:B>33.705</cc:B>
+						<cc:L>73.093</cc:L>
+						<cc:A>12.801</cc:A>
+						<cc:B>97.441</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>0.7930</cc:Density>
+						<cc:Density>0.1830</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.1540</cc:Density>
+						<cc:Density>0.4030</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6460</cc:Density>
+						<cc:Density>2.4120</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>0.9770</cc:Density>
+						<cc:Density>0.3040</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.006963 0.008704 0.023338 0.018717 0.022311 0.023391 0.022197 0.022402 0.022464 0.022496 0.021746 0.022691 0.025395 0.034891 0.049741 0.068992 0.078048 0.082631 0.088022 0.093069 0.108463 0.129219 0.149283 0.163842 0.164865 0.160561 0.156852 0.154025 0.149849 0.148866 0.149801 0.155916 0.164392 0.176184 0.188378 0.198062 0.215041 0.235282 0.257964 0.290443 0.319725 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.195520 0.244400 0.049900 0.010600 0.006700 0.004500 0.003500 0.003100 0.003600 0.006100 0.020400 0.062800 0.108200 0.200000 0.298500 0.395600 0.432000 0.451000 0.469300 0.487100 0.529400 0.585900 0.635500 0.665500 0.665200 0.655600 0.642500 0.633900 0.623000 0.616700 0.616200 0.625000 0.638200 0.657300 0.681800 0.699600 0.729700 0.761300 0.793300 0.835400 0.864500 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="551"/>
@@ -569,34 +569,34 @@
 				</cc:TagCollection>
 			</cc:Object>
 			<cc:Object ObjectType="Target" Name="Sample_17" Id="c17">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>19.555</cc:L>
-						<cc:A>12.324</cc:A>
-						<cc:B>-5.654</cc:B>
+						<cc:L>42.354</cc:L>
+						<cc:A>38.976</cc:A>
+						<cc:B>-17.608</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.2730</cc:Density>
+						<cc:Density>0.4780</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6350</cc:Density>
+						<cc:Density>1.1870</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.4180</cc:Density>
+						<cc:Density>0.6850</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.5150</cc:Density>
+						<cc:Density>0.8430</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.003543 0.004428 0.019890 0.035094 0.039416 0.038717 0.036994 0.038166 0.039936 0.039160 0.037638 0.034456 0.031321 0.027232 0.024870 0.023285 0.022547 0.021745 0.021788 0.021745 0.022742 0.025320 0.032301 0.044446 0.052338 0.055546 0.057512 0.057433 0.057700 0.059720 0.063211 0.071895 0.081761 0.095942 0.111985 0.124546 0.148274 0.174508 0.204802 0.247705 0.284992 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.071120 0.088900 0.184800 0.218000 0.219300 0.207000 0.198000 0.206000 0.221300 0.224800 0.216700 0.194700 0.172800 0.133800 0.098000 0.063500 0.050300 0.045600 0.049200 0.057400 0.083900 0.133700 0.202200 0.289300 0.328400 0.345900 0.350400 0.350200 0.350800 0.355700 0.367700 0.396900 0.427500 0.466400 0.512000 0.543900 0.596200 0.649400 0.701600 0.766400 0.810900 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="496"/>
@@ -604,34 +604,34 @@
 				</cc:TagCollection>
 			</cc:Object>
 			<cc:Object ObjectType="Target" Name="Sample_18" Id="c18">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>20.413</cc:L>
-						<cc:A>-4.951</cc:A>
-						<cc:B>-17.025</cc:B>
+						<cc:L>40.775</cc:L>
+						<cc:A>-34.399</cc:A>
+						<cc:B>-42.591</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6770</cc:Density>
+						<cc:Density>2.7820</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.4810</cc:Density>
+						<cc:Density>0.7560</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.2360</cc:Density>
+						<cc:Density>0.4900</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.5570</cc:Density>
+						<cc:Density>1.0600</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.006963 0.008704 0.023338 0.035094 0.042391 0.048396 0.053437 0.062227 0.072384 0.077488 0.077785 0.073115 0.067720 0.056166 0.045453 0.033634 0.027750 0.025224 0.023531 0.022615 0.022742 0.021827 0.021825 0.021788 0.020935 0.020830 0.020914 0.020885 0.020669 0.020772 0.020782 0.020789 0.020875 0.020933 0.020834 0.021623 0.021678 0.024310 0.029631 0.047971 0.075701 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.106640 0.133300 0.134900 0.201400 0.234800 0.271900 0.306600 0.344700 0.387600 0.407100 0.410400 0.393900 0.371500 0.325200 0.271400 0.193400 0.140700 0.098300 0.066200 0.050300 0.031800 0.018600 0.009800 0.003600 0.001700 0.001000 0.001000 0.000900 0.000800 0.000900 0.000900 0.001600 0.002800 0.006200 0.013900 0.023300 0.048300 0.090400 0.152800 0.266100 0.375900 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="445"/>
@@ -639,34 +639,34 @@
 				</cc:TagCollection>
 			</cc:Object>
 			<cc:Object ObjectType="Target" Name="Sample_19" Id="c19">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>50.106</cc:L>
-						<cc:A>-1.794</cc:A>
-						<cc:B>1.032</cc:B>
+						<cc:L>86.079</cc:L>
+						<cc:A>-1.432</cc:A>
+						<cc:B>1.198</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>0.7420</cc:Density>
+						<cc:Density>0.1720</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>0.7290</cc:Density>
+						<cc:Density>0.1650</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>0.7690</cc:Density>
+						<cc:Density>0.1890</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>0.7350</cc:Density>
+						<cc:Density>0.1680</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.024432 0.030540 0.049858 0.100603 0.133866 0.154867 0.165242 0.176726 0.189696 0.198302 0.204082 0.205898 0.205700 0.202538 0.199821 0.190590 0.181245 0.174830 0.171686 0.172220 0.179313 0.190336 0.197298 0.194345 0.187545 0.177919 0.170794 0.167078 0.160183 0.158387 0.158460 0.163712 0.171351 0.182290 0.194454 0.203252 0.220243 0.239623 0.263193 0.294804 0.323288 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.444480 0.555600 0.410600 0.525100 0.574400 0.611600 0.636800 0.660600 0.688000 0.704900 0.716800 0.720200 0.716900 0.710800 0.707700 0.691600 0.674700 0.661100 0.655000 0.656900 0.671100 0.695400 0.711600 0.705300 0.687900 0.667500 0.647800 0.636100 0.621800 0.613300 0.611700 0.620300 0.633700 0.653400 0.677800 0.696400 0.728000 0.759400 0.792500 0.835000 0.863300 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="703"/>
@@ -674,34 +674,34 @@
 				</cc:TagCollection>
 			</cc:Object>
 			<cc:Object ObjectType="Target" Name="Sample_20" Id="c20">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>37.105</cc:L>
-						<cc:A>-2.942</cc:A>
-						<cc:B>-3.073</cc:B>
+						<cc:L>73.655</cc:L>
+						<cc:A>-3.363</cc:A>
+						<cc:B>-0.976</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.0560</cc:Density>
+						<cc:Density>0.3580</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.0110</cc:Density>
+						<cc:Density>0.3300</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.0110</cc:Density>
+						<cc:Density>0.3540</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.0280</cc:Density>
+						<cc:Density>0.3410</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.010506 0.013132 0.033150 0.064924 0.083294 0.091146 0.093719 0.098734 0.109824 0.119148 0.126296 0.129422 0.128668 0.123395 0.114918 0.100038 0.090189 0.084371 0.081921 0.083501 0.089219 0.097787 0.102141 0.099351 0.092464 0.085054 0.079297 0.076578 0.073202 0.073568 0.075333 0.083155 0.093069 0.107281 0.123270 0.135789 0.158679 0.184058 0.213517 0.254682 0.290336 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.302240 0.377800 0.319600 0.385300 0.410000 0.423500 0.430500 0.446300 0.478700 0.507300 0.532300 0.545000 0.543900 0.532800 0.514900 0.477000 0.448200 0.428600 0.422200 0.426000 0.444500 0.471400 0.487800 0.477900 0.454600 0.429600 0.407400 0.396000 0.384300 0.381500 0.388400 0.412600 0.440800 0.477400 0.521200 0.552200 0.602800 0.654600 0.706100 0.770000 0.812300 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="652"/>
@@ -709,34 +709,34 @@
 				</cc:TagCollection>
 			</cc:Object>
 			<cc:Object ObjectType="Target" Name="Sample_21" Id="c21">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>27.778</cc:L>
-						<cc:A>-3.086</cc:A>
-						<cc:B>-2.613</cc:B>
+						<cc:L>62.387</cc:L>
+						<cc:A>-4.185</cc:A>
+						<cc:B>0.209</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.3110</cc:Density>
+						<cc:Density>0.5330</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.2630</cc:Density>
+						<cc:Density>0.5050</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.2720</cc:Density>
+						<cc:Density>0.5580</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.2820</cc:Density>
+						<cc:Density>0.5170</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.006963 0.008704 0.029968 0.043867 0.051315 0.051622 0.050970 0.053101 0.059072 0.066656 0.073603 0.078157 0.078725 0.074037 0.066893 0.056056 0.049430 0.045230 0.044446 0.045230 0.048983 0.054132 0.057618 0.055776 0.051466 0.046867 0.043570 0.042640 0.040476 0.041544 0.043295 0.048507 0.056537 0.067159 0.082470 0.094274 0.117059 0.144121 0.176043 0.222411 0.264508 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.213360 0.266700 0.234600 0.263700 0.273000 0.269300 0.264300 0.273200 0.304600 0.338400 0.372000 0.393400 0.396800 0.387000 0.364700 0.320900 0.291200 0.271900 0.266500 0.271100 0.290300 0.317100 0.335100 0.328400 0.307800 0.285000 0.265800 0.256300 0.247700 0.247600 0.256800 0.284400 0.316100 0.358200 0.409300 0.446600 0.508100 0.572200 0.636600 0.717100 0.772700 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="599"/>
@@ -744,34 +744,34 @@
 				</cc:TagCollection>
 			</cc:Object>
 			<cc:Object ObjectType="Target" Name="Sample_22" Id="c22">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>20.546</cc:L>
-						<cc:A>-2.377</cc:A>
-						<cc:B>-2.175</cc:B>
+						<cc:L>48.119</cc:L>
+						<cc:A>-5.447</cc:A>
+						<cc:B>0.909</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.5430</cc:Density>
+						<cc:Density>0.7990</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.4980</cc:Density>
+						<cc:Density>0.7650</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.4940</cc:Density>
+						<cc:Density>0.8590</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.5160</cc:Density>
+						<cc:Density>0.7830</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.003543 0.004428 0.026520 0.031000 0.034210 0.033071 0.031240 0.030699 0.033280 0.036661 0.040984 0.043701 0.044018 0.042550 0.037734 0.031909 0.029485 0.027834 0.027017 0.026964 0.028865 0.030559 0.032301 0.031374 0.029658 0.027773 0.027013 0.026106 0.024975 0.025965 0.026843 0.029451 0.033052 0.039249 0.049482 0.058813 0.077172 0.102448 0.133339 0.182290 0.227994 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.088880 0.111100 0.137800 0.147700 0.147200 0.137900 0.129400 0.132700 0.156600 0.187000 0.219700 0.243100 0.248300 0.240000 0.217600 0.177600 0.152900 0.137800 0.134000 0.137600 0.152100 0.172900 0.187800 0.184300 0.168900 0.152300 0.138700 0.132300 0.127400 0.129000 0.138000 0.163200 0.193000 0.233700 0.286100 0.325600 0.394000 0.468000 0.544500 0.642800 0.714300 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="555"/>
@@ -779,34 +779,34 @@
 				</cc:TagCollection>
 			</cc:Object>
 			<cc:Object ObjectType="Target" Name="Sample_23" Id="c23">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>17.032</cc:L>
-						<cc:A>-0.923</cc:A>
-						<cc:B>-1.827</cc:B>
+						<cc:L>30.235</cc:L>
+						<cc:A>-7.172</cc:A>
+						<cc:B>1.651</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6640</cc:Density>
+						<cc:Density>1.2430</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6300</cc:Density>
+						<cc:Density>1.1860</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.5950</cc:Density>
+						<cc:Density>1.3630</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6430</cc:Density>
+						<cc:Density>1.2160</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.003543 0.004428 0.019890 0.025151 0.027517 0.026618 0.025485 0.024891 0.024128 0.024996 0.025928 0.026893 0.027088 0.026381 0.025728 0.023285 0.022547 0.022615 0.021788 0.021745 0.022742 0.022701 0.022698 0.022659 0.021808 0.021698 0.020914 0.020885 0.020669 0.020772 0.020782 0.021655 0.022615 0.025294 0.028647 0.033731 0.044222 0.062510 0.088022 0.133447 0.179901 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.035520 0.044400 0.055700 0.055500 0.052600 0.044700 0.038500 0.039200 0.051700 0.070300 0.093000 0.110700 0.115300 0.109900 0.093700 0.067700 0.053300 0.045200 0.043200 0.045000 0.052400 0.063400 0.071800 0.070300 0.062100 0.053600 0.047100 0.044300 0.042500 0.044000 0.049500 0.065100 0.085100 0.115200 0.158200 0.193500 0.259200 0.336200 0.421400 0.538100 0.628100 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="501"/>
@@ -814,34 +814,34 @@
 				</cc:TagCollection>
 			</cc:Object>
 			<cc:Object ObjectType="Target" Name="Sample_24" Id="c24">
-				<cc:CreationDate>2026-06-08T16:07:55</cc:CreationDate>
+				<cc:CreationDate>2026-06-09T12:25:02</cc:CreationDate>
 				<cc:ColorValues>
 					<cc:ColorCIELab ColorSpecification="CS1">
-						<cc:L>16.667</cc:L>
-						<cc:A>-0.482</cc:A>
-						<cc:B>-1.757</cc:B>
+						<cc:L>11.979</cc:L>
+						<cc:A>-6.875</cc:A>
+						<cc:B>-0.317</cc:B>
 					</cc:ColorCIELab>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6770</cc:Density>
+						<cc:Density>1.9110</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Red</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6450</cc:Density>
+						<cc:Density>1.8500</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Green</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6040</cc:Density>
+						<cc:Density>2.0770</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Blue</cc:Filter>
 					</cc:ColorDensity>
 					<cc:ColorDensity ColorSpecification="CS1">
-						<cc:Density>1.6550</cc:Density>
+						<cc:Density>1.8840</cc:Density>
 						<cc:Status>A</cc:Status>
 						<cc:Filter>Visual</cc:Filter>
 					</cc:ColorDensity>
-					<cc:ReflectanceSpectrum StartWL="380" ColorSpecification="CS1">0.003543 0.004428 0.026520 0.024566 0.026773 0.025811 0.024663 0.024891 0.024128 0.024163 0.023419 0.023531 0.023702 0.023828 0.023155 0.022422 0.022547 0.022615 0.022659 0.021745 0.021868 0.021827 0.021825 0.021788 0.020935 0.020830 0.020914 0.020885 0.020669 0.020772 0.020782 0.020789 0.020875 0.021805 0.022571 0.024217 0.027747 0.037333 0.053162 0.087220 0.129137 </cc:ReflectanceSpectrum>
+					<cc:TransmittanceSpectrum StartWL="380" ColorSpecification="CS1">0.000000 0.000000 0.017600 0.014000 0.012200 0.009500 0.006600 0.006700 0.010800 0.017900 0.027100 0.034500 0.036000 0.032500 0.024700 0.014300 0.009900 0.007400 0.006900 0.007400 0.009600 0.013000 0.016100 0.016100 0.013600 0.011100 0.009500 0.008700 0.008300 0.009000 0.010900 0.016700 0.025300 0.040500 0.066100 0.090200 0.140700 0.207900 0.290500 0.415200 0.520900 </cc:TransmittanceSpectrum>
 				</cc:ColorValues>
 				<cc:TagCollection Name="Location">
 					<cc:Tag Name="PositionX" Value="449"/>
@@ -857,18 +857,18 @@
 					<cc:Method>E308_Table5</cc:Method>
 				</cc:TristimulusSpec>
 				<cc:MeasurementSpec>
-					<cc:MeasurementType>Spectrum_Reflectance</cc:MeasurementType>
+					<cc:MeasurementType>Spectrum_Transmittance</cc:MeasurementType>
 					<cc:GeometryChoice>
 						<cc:SingleAngle>
-							<cc:SingleAngleConfiguration>Annular</cc:SingleAngleConfiguration>
-							<cc:IlluminationAngle>45</cc:IlluminationAngle>
+							<cc:SingleAngleConfiguration>Uniplanar</cc:SingleAngleConfiguration>
+							<cc:IlluminationAngle>180.0</cc:IlluminationAngle>
 							<cc:MeasurementAngle>0.0</cc:MeasurementAngle>
 						</cc:SingleAngle>
 					</cc:GeometryChoice>
 					<cc:WavelengthRange StartWL="380" Increment="10"/>
 					<cc:Aperture>8 mm</cc:Aperture>
 					<cc:Device>
-						<cc:Manufacturer>Barbieri electronic</cc:Manufacturer>
+						<cc:Manufacturer>Barbieri electronics</cc:Manufacturer>
 						<cc:Model>Spectro LFP  ver:5.20 RT S2 S3,SN=B104450,MN=67403006,67002009</cc:Model>
 						<cc:SerialNumber>B104450</cc:SerialNumber>
 						<cc:DeviceFilter>Filter_None</cc:DeviceFilter>
@@ -881,7 +881,7 @@
 	</cc:Resources>
 	<cc:CustomResources>
 		<bb:BARBIERI_INFO>
-			<Type>eSpotJob</Type>, <deltaE>delta E</deltaE>, <deltaETolerance>3.00</deltaETolerance>, <JobName>test_py</JobName>, Spectro_xy_version=2, Spectro_xy_version=2,File_Format=BARBIERI,Patches_X=1,Patches_Y=24,Number_of_Patches=24,Number_of_Pages=1,Target_Size_X=20,Target_Size_Y=20,MR,Illuminant=D50,Observer=2,Density=Status A,Save_Spectral=1,Save_Lab=1,Save_XYZ=1,Save_Density=1,Save_CxF=1,Fast_Measuring_Mode=1,Use_AutoPositioning=1,Use_AutoRecognition=0,Use_AutoPositioning_Lines=1,Run_Profiler=0,Cloud_Connection=0,Reference_File_Name=,Quality_Control=0,Control_Reference_File=,Control_Settings_File=,Profile_File_Name=,Target_Image_Preview=,Spot_Measurement_Mode=0,Spot_Measurement=1,Display_Values=1,Number_of_Measurements_per_Patch_y=1,Distance_of_Measurements_per_Patch_y=10,Number_of_Measurements_per_Patch_x=1,Distance_of_Measurements_per_Patch_x=10,Average_Method=1,Target_Header_Size=20,AutoPositioning_Mode=0,Continuous_Measurement_Mode=0,Continuous_Measurement_Page=1,Save_Continuous_Measurement=0,Continuous_Measurement_Delay=0,CF_Option=1,Calibration_Frequency=0,Measuring_Aperture=8,Slope_Factor=1.000,Job_protection=-1,Measurement_Condition=M0,Translucency_Mode=0,Translucency_IntTime=1000,Save_Debug=0,Patch_Size_X_mm=0.00,Patch_Size_Y_mm=0.00,Separator_Size_X_mm=0.00,Separator_Size_Y_mm=0.00,Target_Type=0,Ignore_TargetLines=P1L0T0R0B0F1,Use_QrCode=-1,AutoposLinesInverted=0,CustomTextInOutputFile=,Transmission_Workflow=0,Light_Box_Illumination=,Substrate_Spectro=,
+			<Type>eSpotJob</Type>, <deltaE>delta E</deltaE>, <deltaETolerance>3.00</deltaETolerance>, <JobName>test1</JobName>, Spectro_xy_version=2, Spectro_xy_version=2,File_Format=BARBIERI,Patches_X=1,Patches_Y=24,Number_of_Patches=24,Number_of_Pages=1,Target_Size_X=20,Target_Size_Y=20,MT,Illuminant=D50,Observer=2,Density=Status A,Save_Spectral=1,Save_Lab=1,Save_XYZ=1,Save_Density=1,Save_CxF=1,Fast_Measuring_Mode=1,Use_AutoPositioning=1,Use_AutoRecognition=0,Use_AutoPositioning_Lines=1,Run_Profiler=0,Cloud_Connection=0,Reference_File_Name=,Quality_Control=0,Control_Reference_File=,Control_Settings_File=,Profile_File_Name=,Target_Image_Preview=,Spot_Measurement_Mode=0,Spot_Measurement=1,Display_Values=1,Number_of_Measurements_per_Patch_y=1,Distance_of_Measurements_per_Patch_y=10,Number_of_Measurements_per_Patch_x=1,Distance_of_Measurements_per_Patch_x=10,Average_Method=1,Target_Header_Size=20,AutoPositioning_Mode=0,Continuous_Measurement_Mode=0,Continuous_Measurement_Page=1,Save_Continuous_Measurement=0,Continuous_Measurement_Delay=0,CF_Option=1,Calibration_Frequency=0,Measuring_Aperture=8,Slope_Factor=1.000,Job_protection=-1,Measurement_Condition=M0,Translucency_Mode=0,Translucency_IntTime=1000,Save_Debug=0,Patch_Size_X_mm=0.00,Patch_Size_Y_mm=0.00,Separator_Size_X_mm=0.00,Separator_Size_Y_mm=0.00,Target_Type=0,Ignore_TargetLines=P1L0T0R0B0F1,Use_QrCode=-1,AutoposLinesInverted=0,CustomTextInOutputFile=,Transmission_Workflow=0,Light_Box_Illumination=,Substrate_Spectro=,
 		</bb:BARBIERI_INFO>
 	</cc:CustomResources>
 </cc:CxF>

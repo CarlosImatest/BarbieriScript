@@ -89,43 +89,72 @@ class barbieri:
     
     def calibrate(self):
 
-        #move x axis to zero to set up for calibration
-        py.moveTo(self.x_pos_center, self.x_pos_y_center)
-        py.click(clicks=2, interval=0.2)
-        self.keyboard.type("25")
-        self.keyboard.press(Key.enter)
-        self.keyboard.release(Key.enter)
-        self.wait_for_mouse()
+        # #move x axis to zero to set up for calibration
+        # py.moveTo(self.x_pos_center, self.x_pos_y_center)
+        # py.click(clicks=2, interval=0.2)
+        # self.keyboard.type("25")
+        # self.keyboard.press(Key.enter)
+        # self.keyboard.release(Key.enter)
+        # self.wait_for_mouse()
 
-        #move y axis to zero to set up for calibration
-        py.moveTo(self.y_pos_x_center, self.y_pos_y_center)
-        py.click(clicks=2, interval=0.2)
-        self.keyboard.type("25")
-        self.keyboard.press(Key.enter)
-        self.keyboard.release(Key.enter)
-        self.wait_for_mouse()
+        # #move y axis to zero to set up for calibration
+        # py.moveTo(self.y_pos_x_center, self.y_pos_y_center)
+        # py.click(clicks=2, interval=0.2)
+        # self.keyboard.type("25")
+        # self.keyboard.press(Key.enter)
+        # self.keyboard.release(Key.enter)
+        # self.wait_for_mouse()
 
         #start the calibration
         py.moveTo(self.x_calibration_button_center, self.y_calibration_button_center)
         py.click(clicks=1)
         self.wait_for_mouse()
 
-        ok_button_done_calibration = py.locateOnScreen(r"Images\ok_button_calibration_done.PNG", confidence=0.90)
-        x_ok_button_done_calibration_center = (ok_button_done_calibration[0] + ok_button_done_calibration[2]//2)
-        y_ok_button_done_calibration_center = (ok_button_done_calibration[1] + ok_button_done_calibration[3]//2)
+        # #calibration acknowledgement
+        # py.locateAllOnScreen(r"Images\calibration_acknowledgement.PNG", confidence=90)
 
-        win = gw.getWindowsWithTitle('Gateway')[0] # Replace with your window title
-        if win.title == 'Gateway':
-            win.activate() #bring the window to the foreground after calibration is done
-            time.sleep(0.5)
-            # keyboard = Controller()
-            # keyboard.press(Key.enter)
-            # keyboard.release(Key.enter)
-            # time.sleep(3) #give the app a moment to register the enter key press before we start the measurements
-            # self.wait_for_mouse() #wait for the app to finish any processing it needs to do after calibration before we start measurements
+        # ok_button_done_calibration = py.locateOnScreen(r"Images\ok_button_calibration_done.PNG", confidence=0.90)
+        # x_ok_button_done_calibration_center = (ok_button_done_calibration[0] + ok_button_done_calibration[2]//2)
+        # y_ok_button_done_calibration_center = (ok_button_done_calibration[1] + ok_button_done_calibration[3]//2)
+
+        # win = gw.getWindowsWithTitle('Gateway')[0] # Replace with your window title
+        # if win.title == 'Gateway':
+        #     win.activate() #bring the window to the foreground after calibration is done
+        #     time.sleep(0.5)
+        #     # keyboard = Controller()
+        #     # keyboard.press(Key.enter)
+        #     # keyboard.release(Key.enter)
+        #     # time.sleep(3) #give the app a moment to register the enter key press before we start the measurements
+        #     # self.wait_for_mouse() #wait for the app to finish any processing it needs to do after calibration before we start measurements
+        #     py.moveTo(x_ok_button_done_calibration_center, y_ok_button_done_calibration_center)
+        #     py.click(clicks=1)
+        #     self.wait_for_mouse() #wait for the app to finish any processing it needs to do
+
+        if py.locateAllOnScreen(r"Images\calibration_acknowledgement.PNG", confidence=90):
+            ok_button_done_calibration = py.locateOnScreen(r"Images\ok_button_calibration_done.PNG", confidence=0.90)
+            x_ok_button_done_calibration_center = (ok_button_done_calibration[0] + ok_button_done_calibration[2]//2)
+            y_ok_button_done_calibration_center = (ok_button_done_calibration[1] + ok_button_done_calibration[3]//2)
             py.moveTo(x_ok_button_done_calibration_center, y_ok_button_done_calibration_center)
             py.click(clicks=1)
-            self.wait_for_mouse() #wait for the app to finish any processing it needs to do
+            self.wait_for_mouse()
+
+            if py.locateAllOnScreen(r"Images\calibration_done_ack.PNG", confidence=0.80):
+                time.sleep(1)
+                ok_button_done_calibration = py.locateOnScreen(r"Images\ok_button_calibration_done.PNG", confidence=0.90)
+                x_ok_button_done_calibration_center = (ok_button_done_calibration[0] + ok_button_done_calibration[2]//2)
+                y_ok_button_done_calibration_center = (ok_button_done_calibration[1] + ok_button_done_calibration[3]//2)
+                py.moveTo(x_ok_button_done_calibration_center, y_ok_button_done_calibration_center)
+                py.click(clicks=1)
+        time.sleep(1)
+        self.root.withdraw()
+        self.root.attributes('-topmost', True)
+
+        messagebox.showinfo(
+            title="Insert Film",
+            message="Please insert the film on the top left corner.\n\nPress OK when ready to continue."
+        )
+
+        self.root.attributes('-topmost', False)
 
     def move_to_xy(self):
         print("Moving to next patch...")
