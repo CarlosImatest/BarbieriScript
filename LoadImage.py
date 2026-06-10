@@ -11,13 +11,15 @@ class LoadImage:
     CANVAS_W = 996
     OFFSET = 10
     BARBIERI_UNITS_PER_INCH = 84.32
+    COUNTER = 1
 
-    def __init__(self, path, film_w, film_h, active_w, active_h):
+    def __init__(self, path, film_w, film_h, active_w, active_h, use_xml):
         self.film_w = film_w * self.BARBIERI_UNITS_PER_INCH
         self.film_h = film_h * self.BARBIERI_UNITS_PER_INCH
         self.active_w = active_w * self.BARBIERI_UNITS_PER_INCH
         self.active_h = active_h * self.BARBIERI_UNITS_PER_INCH
         self.path = path
+        self.use_xml = use_xml
         self.x_cordinates = []
         self.y_cordinates = []
         self.resized_img = None
@@ -43,13 +45,19 @@ class LoadImage:
             self.x_cordinates.append(self.CANVAS_W - x + self.OFFSET)
             self.y_cordinates.append(y)
             self.redraw()
+            self.new_format_dict[f"patch{self.COUNTER:02d}"] = [self.x_cordinates[-1], self.y_cordinates[-1]]
+            self.COUNTER += 1
+            print(self.new_format_dict)
 
     def on_ctrl_z(self):
         if self.x_cordinates:
             self.x_cordinates.pop()
             self.y_cordinates.pop()
+            self.new_format_dict.pop(f"patch{self.COUNTER:02d}", None)
+            self.COUNTER -= 1
             print(f"[Undo] Removed last point. {len(self.x_cordinates)} point(s) remaining.")
             self.redraw()
+            print(self.new_format_dict)
         else:
             print("[Undo] Nothing to undo.")
 
@@ -113,27 +121,36 @@ class LoadImage:
             return
 
         counter = 0
-        new_x_cordinates = []
         new_y_cordinates = []
+        # getting the avg of y coordinates for each row of patches
         for i in range(len(self.x_cordinates)):
             if i == len(self.x_cordinates) - 1:
                 avg = int(sum(self.y_cordinates[counter:]) / (len(self.y_cordinates) - counter))
-                new_x_cordinates.append(self.x_cordinates[counter:i + 1])
                 new_y_cordinates.append(avg)
             elif self.y_cordinates[i] * 1.1 < self.y_cordinates[i + 1]:
                 avg = int(sum(self.y_cordinates[counter:i + 1]) / (i + 1 - counter))
-                new_x_cordinates.append(self.x_cordinates[counter:i + 1])
                 new_y_cordinates.append(avg)
                 counter = i + 1
 
-        self.x_cordinates = new_x_cordinates
         self.y_cordinates = new_y_cordinates
+        self.format_coordinates()     
     
     def format_coordinates(self):
-        for y in self.y_cordinates:
-            for x in self.x_cordinates:
-                self.new_format_dict[f"patch{i+1:02d}"] = [x, y]
-                
+        new_dict = {}
+        counter = 1
+
+        #assigning patch names based on the average y coordinate of each row
+        for avg_y in self.y_cordinates:
+            for key, (x, y) in self.new_format_dict.items():
+                if abs(y - avg_y) <= avg_y * 0.1:
+                    new_dict[f"patch{counter:02d}"] = [x, avg_y]
+                    counter += 1
+
+        new_dict["use_xml"] = self.use_xml
+        self.new_format_dict = new_dict
+        print(self.new_format_dict)
+
+        self.new_format_dict["use_xml"] = self.use_xml
 
     def promtFilmSize(self):
         win = tk.Tk()

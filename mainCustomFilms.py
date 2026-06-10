@@ -114,11 +114,12 @@ if not use_xml:
         exit()
 
     # loading image
-    img = LoadImage(path, x, y, x_active, y_active)
+    img = LoadImage(path, x, y, x_active, y_active, use_xml)
     img.loadImage()
     # getting the x and y coordinates of the patches from img
     x_coordinate = img.x_cordinates
     y_coordinate = img.y_cordinates
+    xml_coordinates = img.new_format_dict
 
     # window asking for a filename
     root = tk.Tk()
@@ -132,7 +133,7 @@ if not use_xml:
         exit()
     else:
         with open(f"Film_Coordinates\{file_name}.json", "w") as f:
-            json.dump({"x": x_coordinate, "y": y_coordinate, "use_xml": use_xml}, f)
+            json.dump(xml_coordinates, f)
 else:
     path = pick_image_path()
     if not path:
